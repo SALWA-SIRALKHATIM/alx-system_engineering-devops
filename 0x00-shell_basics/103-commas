@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | awk '{if (substr($1,1,1) ~/[0-9]) digits = digits $1", "; else letters = letters $1" , ";} END {print dotfiles digits letters}'
+ls -apnm
